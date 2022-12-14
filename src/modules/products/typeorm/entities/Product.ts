@@ -3,15 +3,15 @@ import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from "typeor
 @Entity('products')
 export default class Product{
     @PrimaryGeneratedColumn('uuid')
-    id:string;
+    id: string;
     @Column()
-    name:string;
+    name: string;
     @Column('decimal')
-    price:number;
+    price: number;
     @Column('int')
-    quantity:number;
+    quantity: number;
     @CreateDateColumn()
-    created_at:Date;
+    created_at: Date;
     @CreateDateColumn()
-    updated_at:Date;
+    updated_at: Date;
 }
